@@ -1,0 +1,11 @@
+package springtestcrud.demo.repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import springtestcrud.demo.model.Item;
+
+
+@Repository
+public interface ItemRepository extends CrudRepository<Item, Long> {
+
+}
