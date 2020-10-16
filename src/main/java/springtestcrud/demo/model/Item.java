@@ -21,11 +21,17 @@ public class Item {
     private String name;
     private String comment;
 
-    public Item(String name, String comment) {
+    public Item() {
     }
 
     public Item(Long id, String name, String comment) {
 
+        this.id = id;
+        this.name = name;
+        this.comment = comment;
+    }
+
+    public void setContent(Long id, String name, String comment) {
         this.id = id;
         this.name = name;
         this.comment = comment;

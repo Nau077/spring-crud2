@@ -35,7 +35,9 @@ public class ItemService implements IItemService {
 
     public Item createItem(Long id, String name, String comment) {
 
-        Item newItem = new Item(name, comment);
-        return repository.save(newItem);
+//        Item newItem = new Item();
+        var item = new Item();
+        item.setContent(id, name, comment);
+        return repository.save(item);
     }
 }
